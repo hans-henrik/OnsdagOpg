@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class Main {
@@ -12,6 +13,7 @@ public class Main {
         Sprog sprog = new Sprog();
 
         while (!   getString(dialog.quit() ).equalsIgnoreCase("q") )  {
+            sprog.getSprog();
 
 
             if(getString("change language ?").equalsIgnoreCase("y")) {
@@ -25,6 +27,7 @@ public class Main {
                 System.out.println(dialog.Flag());
             }
         }
+       // Iterator iterator = sprog.getDialoger().entrySet().iterator();
 
 
     }

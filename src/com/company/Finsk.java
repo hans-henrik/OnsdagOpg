@@ -28,4 +28,11 @@ public class Finsk implements Dialog{
     public String selectedFlag() {
         return "Haluatko nähdä Suomen värit?";
     }
+
+    @Override
+    public String toString() {
+        return "Finsk{" +
+                "s='" + s + '\'' +
+                '}';
+    }
 }

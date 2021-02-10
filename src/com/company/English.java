@@ -27,4 +27,11 @@ public class English implements Dialog{
     public String selectedFlag() {
         return "Do you wanna see the colors of St George's Cross ";
     }
+
+    @Override
+    public String toString() {
+        return "English{" +
+                "s='" + s + '\'' +
+                '}';
+    }
 }

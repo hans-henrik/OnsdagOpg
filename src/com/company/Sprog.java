@@ -1,10 +1,16 @@
 package com.company;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 public class Sprog  {
 
     private HashMap<String, Dialog> dialoger = new HashMap<>();
+
+    public HashMap<String, Dialog> getDialoger() {
+        return dialoger;
+    }
 
     public Sprog() {
 
@@ -22,4 +28,24 @@ public class Sprog  {
        return dialoger.getOrDefault(s, new English());
 
     }
+
+    @Override
+    public String toString() {
+        return "Sprog{" +
+                "dialoger=" + dialoger +
+                '}';
+    }
+
+    public void getSprog()
+{
+    System.out.println("For Loop:");
+    for (Map.Entry me : dialoger.entrySet()) {
+        System.out.println("Key: "+me.getKey() + " & Value: " + me.getValue());
+    }
+
+    }
+
+
 }
+
+

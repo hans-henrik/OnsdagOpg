@@ -28,4 +28,11 @@ public class Svensk implements  Dialog {
     public String selectedFlag() {
         return "Vill du se färgerna på den svenska flaggan?";
     }
+
+    @Override
+    public String toString() {
+        return "Svensk{" +
+                "s='" + s + '\'' +
+                '}';
+    }
 }

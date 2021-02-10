@@ -28,4 +28,11 @@ public class Dansk implements Dialog {
     public String selectedFlag() {
         return "Vil du se farverne på Dannebrog?";
     }
+
+    @Override
+    public String toString() {
+        return "Dansk{" +
+                "s='" + s + '\'' +
+                '}';
+    }
 }

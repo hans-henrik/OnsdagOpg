@@ -28,4 +28,11 @@ private String s = "portugisisk";
     public String selectedFlag() {
         return "vais ver as cores de uma Bandeira de Portugal?";
     }
+
+    @Override
+    public String toString() {
+        return "Portugisisk{" +
+                "s='" + s + '\'' +
+                '}';
+    }
 }
