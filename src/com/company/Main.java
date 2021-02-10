@@ -13,13 +13,14 @@ public class Main {
         Sprog sprog = new Sprog();
 
         while (!   getString(dialog.quit() ).equalsIgnoreCase("q") )  {
-            sprog.getSprog();
+
 
 
             if(getString("change language ?").equalsIgnoreCase("y")) {
-                System.out.println("type the following names change language :");
-
-                dialog = sprog.SkiftSprog(getString("da / eng / fin / sve / Por"));
+                //System.out.println("type the following names change language :");
+                sprog.getSprog();
+                dialog =sprog.SkiftSprog(getString("Type here "));
+               // dialog = sprog.SkiftSprog(getString("da / eng / fin / sve / Por"));
 
             }
             System.out.println(dialog.selectedLanguage() + " " + dialog.getLanguage());

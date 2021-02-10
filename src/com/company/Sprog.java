@@ -1,7 +1,6 @@
 package com.company;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 public class Sprog  {
@@ -36,12 +35,12 @@ public class Sprog  {
                 '}';
     }
 
-    public void getSprog()
-{
-    System.out.println("For Loop:");
-    for (Map.Entry me : dialoger.entrySet()) {
-        System.out.println("Key: "+me.getKey() + " & Value: " + me.getValue());
-    }
+    public void getSprog() {
+        System.out.println("The diffrent langues to select from :");
+        for (Map.Entry me : dialoger.entrySet()) {
+            System.out.println("Type: " + me.getKey() + " || to select this language ");
+        }
+
 
     }
 
