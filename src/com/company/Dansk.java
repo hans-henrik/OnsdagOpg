@@ -18,4 +18,5 @@ public class Dansk implements Dialog {
     public String selectedLanguage() {
         return "det valgte sprog er ";
     }
+    fxgyu
 }
