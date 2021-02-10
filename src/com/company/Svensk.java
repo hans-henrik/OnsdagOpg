@@ -1,8 +1,9 @@
 package com.company;
 
-public class English implements Dialog{
+public class Svensk implements  Dialog {
 
-    private String s = "English";
+    private String s = "Svensk";
+
     @Override
     public String getLanguage() {
         return s;
@@ -10,21 +11,21 @@ public class English implements Dialog{
 
     @Override
     public String quit() {
-        return "press q to quit";
+        return "tryck på q för att sluta";
     }
 
     @Override
     public String selectedLanguage() {
-        return "the selected language is ";
+           return "Det valda språket är";
     }
 
     @Override
     public String Flag() {
-        return "Our flag is red and blue and white";
+        return "vår flagga är blå och gul";
     }
 
     @Override
     public String selectedFlag() {
-        return "Do you wanna see the colors of St George's Cross ";
+        return "Vill du se färgerna på den svenska flaggan?";
     }
 }

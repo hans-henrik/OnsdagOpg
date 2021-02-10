@@ -18,5 +18,14 @@ public class Dansk implements Dialog {
     public String selectedLanguage() {
         return "det valgte sprog er ";
     }
-    fxgyu
+
+    @Override
+    public String Flag() {
+        return "vores flag er rødt og hvidt";
+    }
+
+    @Override
+    public String selectedFlag() {
+        return "Vil du se farverne på Dannebrog?";
+    }
 }
